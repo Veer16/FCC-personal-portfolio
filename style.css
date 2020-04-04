@@ -30,10 +30,10 @@ body {
     padding: 0;
 }
 
-#navbar ul li a {
+a {
     text-decoration: none;
     color: white;
-    margin: 30px;
+    margin: 20px;
     cursor: pointer;
 }
 
@@ -62,13 +62,63 @@ body {
     flex-direction: column;
 }
 
-#welcome-section h1 {
+h1 {
     color: #fff;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-style: bold;
 }
 
 #welcome-section p {
     margin-top: 20px;
     font-weight: 100;
+}
+
+#projects {
+    background-color: #45567d;
+    text-align: center;
+    padding: 10rem 2rem;
+}
+
+#projects h1 {
+    border-bottom: 0.2rem solid #fff;
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    padding: 15px;
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project-image {
+    width: 100%;
+    object-fit: cover;
+    height: calc(100% - 6.8rem);
+}
+
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    color: #fff;
+}
+
+.project:hover .code {
+    color: #ff7f50;
+}
+
+.code {
+    color: #303841;
+    transition: color 0.3s ease-out;
+}
+
+.project {
+    background: #303841;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
 }
