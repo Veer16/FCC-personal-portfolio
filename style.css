@@ -36,3 +36,18 @@ body {
     margin: 30px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 815px) {
+
+
+    #navbar ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbar ul li {
+        padding: 5px;
+    }
+
+}
