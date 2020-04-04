@@ -53,7 +53,7 @@ a {
 }
 
 #welcome-section {
-    background-color: #212023;
+    background-color: #303840;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -76,7 +76,7 @@ h1 {
 #projects {
     background-color: #45567d;
     text-align: center;
-    padding: 10rem 2rem;
+    padding: 5rem 1rem;
 }
 
 #projects h1 {
@@ -104,7 +104,7 @@ h1 {
 
 .project-title {
     font-size: 2rem;
-    padding: 2rem 0.5rem;
+    padding: 1rem 0.5rem;
     color: #fff;
 }
 
@@ -121,4 +121,56 @@ h1 {
     background: #303841;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #303840;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 2rem;
+    border-bottom: 5px solid #be3044;
+}
+
+.contact-section-header {
+    margin-bottom: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-section-header h1 {
+    margin: 0px auto;
+    font-size: 4rem;
+}
+
+.contact-links {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.contact-details {
+
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+@media only screen and (max-width: 815px) {
+    .contact-section-header h1 {
+
+        font-size: 2rem;
+    }
+
+    .contact-links {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
