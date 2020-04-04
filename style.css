@@ -6,16 +6,23 @@
     box-sizing: border-box;
 }
 
+:root {
+
+    --dark-blue: #303840;
+    --basic-white: #fff;
+    --cherry: #be3044;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-size: 1.2em;
-    color: #fff;
+    color: var(--basic-white);
 }
 
 #navbar {
     height: 10vh;
     width: 100%;
-    background-color: #be3044;
+    background-color: var(--cherry);
     position: fixed;
     top: 0;
 }
@@ -32,28 +39,14 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--basic-white);
     margin: 20px;
     cursor: pointer;
 }
 
-@media only screen and (max-width: 815px) {
-
-
-    #navbar ul {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #navbar ul li {
-        padding: 5px;
-    }
-
-}
 
 #welcome-section {
-    background-color: #303840;
+    background-color: var(--dark-blue);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -63,7 +56,7 @@ a {
 }
 
 h1 {
-    color: #fff;
+    color: var(--basic-white);
     font-size: 2.5rem;
     font-style: bold;
 }
@@ -80,7 +73,7 @@ h1 {
 }
 
 #projects h1 {
-    border-bottom: 0.2rem solid #fff;
+    border-bottom: 0.2rem solid var(--basic-white);
     max-width: 640px;
     margin: 0 auto 6rem auto;
     padding: 15px;
@@ -105,7 +98,7 @@ h1 {
 .project-title {
     font-size: 2rem;
     padding: 1rem 0.5rem;
-    color: #fff;
+    color: var(--basic-white);
 }
 
 .project:hover .code {
@@ -113,12 +106,12 @@ h1 {
 }
 
 .code {
-    color: #303841;
+    color: var(--dark-blue);
     transition: color 0.3s ease-out;
 }
 
 .project {
-    background: #303841;
+    background: var(--dark-blue);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
 }
@@ -126,11 +119,11 @@ h1 {
 #contact {
     display: flex;
     flex-direction: column;
-    background-color: #303840;
+    background-color: var(--dark-blue);
     justify-content: center;
     align-items: center;
     padding: 10rem 2rem;
-    border-bottom: 5px solid #be3044;
+    border-bottom: 5px solid var(--cherry);
 }
 
 .contact-section-header {
@@ -145,7 +138,7 @@ h1 {
 }
 
 .contact-links {
-    color: #fff;
+    color: var(--basic-white);
     font-size: 1.6rem;
 }
 
@@ -157,6 +150,19 @@ h1 {
 
 .contact-details:hover {
     transform: translateY(8px);
+}
+
+
+
+footer {
+    color: var(--basic-white);
+    background-color: var(--dark-blue);
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
 }
 
 @media only screen and (max-width: 815px) {
@@ -172,5 +178,21 @@ h1 {
         justify-content: center;
         align-items: center;
     }
+
+    footer {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbar ul li {
+        padding: 5px;
+    }
+
 
 }
